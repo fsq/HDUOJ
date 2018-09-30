@@ -38,6 +38,7 @@
 #define FOREACH(elem, container)  for (auto elem : (container))
 #define MEMSET(container, value)  memset(container, value, sizeof(container))
 #define FILL(container, value)    fill(container.begin(), container.end(), value)
+#define FILL0(container)    fill(container.begin(), container.end(), 0)
 #define ALL(container)            (container).begin(), (container).end()
 #define SZ(container)             (int)((container).size())
 

@@ -32,11 +32,11 @@ int main() {
         }
 
         int ans = 0;
-        REP(i, 1, n) {
-            FILL0(vis);
-            if (!M[i] && dfs(i))
-                ++ans;
-        }
+        REP(i, 1, n) 
+            if (!M[i]) {
+                FILL0(vis);
+                ans += dfs(i);
+            }
         printf("%d\n", n-ans);
     }
     
